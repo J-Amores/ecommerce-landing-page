@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'orange': {
           500: '#ff7e1b',
+          600: '#e67016',
           100: '#ffede0',
         },
         'dark-blue': '#1d2026',
@@ -19,6 +20,20 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['Kumbh Sans', 'sans-serif'],
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'bounce-once': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 0.2s ease-out',
+        'bounce-once': 'bounce-once 0.5s ease-in-out',
       },
     },
   },

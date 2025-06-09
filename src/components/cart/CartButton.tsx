@@ -24,7 +24,7 @@ export default function CartButton() {
           className="w-6 h-5"
         />
         {itemCount > 0 && (
-          <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full min-w-[1.25rem] h-5 flex items-center justify-center animate-bounce">
+          <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full min-w-[1.25rem] h-5 flex items-center justify-center animate-bounce-once">
             {itemCount > 99 ? '99+' : itemCount}
           </span>
         )}
